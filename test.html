@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inspector Demo</title>
+  <!-- Include React and ReactDOM if they are external -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <h1>Hello from a Plain HTML Page!</h1>
+  <p>Include the inspector below:</p>
+
+  <!-- Include your built UMD file -->
+  <script src="https://empowerlocal-db-agent-ui.s3.us-east-2.amazonaws.com/component-inspector.umd.js"></script>
+  <script>
+    // Initialize the inspector only after the UMD script has loaded
+    if (window.initComponentInspector) {
+      window.initComponentInspector();
+    } else {
+      console.error('initComponentInspector is not available');
+    }
+  </script>
+</body>
+</html>

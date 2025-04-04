@@ -1,0 +1,21 @@
+{
+    "name": "celp-inspector",
+    "version": "1.0.0",
+    "description": "A simple embeddable React-based component inspector with optional MCP integration.",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@vitejs/plugin-react": "^4.3.4",
+        "lucide-react": "^0.268.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.9",
+        "typescript": "^4.9.0",
+        "vite": "^4.0.0"
+    }
+}
