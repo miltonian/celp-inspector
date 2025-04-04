@@ -97,7 +97,7 @@ export function ComponentInspector({ children, enabled = false }: ComponentInspe
   // Handle messages from iframes for toggling component selection
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
-      // alert('handleMessage')
+      alert('handleMessage')
       // Check if the message has the expected format
       if (event.data && typeof event.data === 'object' && event.data.type === 'TOGGLE_COMPONENT_SELECTION') {
         const { enabled } = event.data;
